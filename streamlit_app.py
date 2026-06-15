@@ -1,11 +1,9 @@
+import streamlit as st
 import google.generativeai as genai
 from dotenv import load_dotenv
-import os
 
-load_dotenv()
-genai.configure(api_key=st.secrets("GEMINI_API_KEY"))
-
-
+# Fix the brackets here from () to []
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 import streamlit as st
 import pandas as pd
